@@ -1,0 +1,9 @@
+flask
+requests
+readability
+readability-lxml
+html2text
+azure-cosmos
+urllib3
+azure-ai-textanalytics
+azure-core

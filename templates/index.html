@@ -1,0 +1,62 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Textractor</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="content">
+							<div class="inner">
+								<h1><a href="http://textractor.azurewebsites.net/">Textractor</a></h1>
+								<p>Welcome to Textractor, the free online text extractor. Paste a URL and get the text of your web article:</p>
+							</div>
+						</div>
+					</header>
+
+					<div style="width: 70%;">
+						<article id="getarticle">
+							<form method="post">
+								<div class="fields">
+									<div class="field">
+										<br><label for="site">Website URL</label>
+										<input type="text" name="site" id="site" />
+									</div>
+								</div>
+								<ul class="actions">
+									<br><li><input type="submit" value="Get article" class="primary" /></li>
+								</ul>
+							</form>
+							<div>{{title}}<br><br>{% for dat in data %}
+								{{dat}}<br/>
+							{% endfor %}</div>
+						</article>
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright">&copy; Textractor. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
